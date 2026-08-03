@@ -1,0 +1,4 @@
+repository "Rio de Prata - Fecart/Rio de Prata - Fecart@4674089676984@cloud"
+  path "/"
+    br "/main"
+    co "/main"
