@@ -3,14 +3,14 @@ using UnityEngine;
 public class PlayerEsconderijo : MonoBehaviour
 {
     [HideInInspector]
-    public int protegido = 0;
+    [SerializeField] public bool protegido = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         // Entrou no esconderijo
         if (other.CompareTag("Esconderijo1"))
         {
-            protegido = 1;
+            protegido = true;
             Debug.Log("Player protegido");
         }
     }
@@ -20,7 +20,7 @@ public class PlayerEsconderijo : MonoBehaviour
         // Saiu do esconderijo
         if (other.CompareTag("Esconderijo1"))
         {
-            protegido = 0;
+            protegido = false;
             Debug.Log("Player desprotegido");
         }
     }

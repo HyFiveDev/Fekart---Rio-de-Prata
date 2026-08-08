@@ -1,7 +1,7 @@
 using UnityEngine;
-using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
-public class Inimigo : MonoBehaviour
+public class InimigoEspecial : MonoBehaviour
 {
     public float velocidade = 3f;
 
@@ -9,13 +9,16 @@ public class Inimigo : MonoBehaviour
     public Transform player;
     public PlayerEsconderijo playerScript;
 
+    [Header("Posto de Controle")]
+    // 0 = não destruído
+    // 1 = destruído
+    public int postoDestruido = 0;
+
     [Header("Imagens")]
     public GameObject imagem1;
     public GameObject imagem2;
 
-    [Header("Colliders")]
-    public Collider2D collider1;
-    public Collider2D collider2;
+    [Header("Colliders")] private Collider2D collider;
 
     [Header("Timer")]
     public float tempoTroca = 15f;
@@ -29,8 +32,8 @@ public class Inimigo : MonoBehaviour
 
     void Start()
     {
+        collider = GetComponent<Collider2D>();
         timer = tempoTroca;
-
         AtualizarEstado();
     }
 
@@ -42,13 +45,11 @@ public class Inimigo : MonoBehaviour
         if (timer <= 0f)
         {
             usandoImagem1 = !usandoImagem1;
-
             AtualizarEstado();
-
             timer = tempoTroca;
         }
 
-        // MOVIMENTO
+        // PERSEGUIÇÃO
         if (perseguindo)
         {
             Vector3 posicaoDestino = new Vector3(
@@ -72,44 +73,25 @@ public class Inimigo : MonoBehaviour
         imagem2.SetActive(!usandoImagem1);
 
         // Alterna colliders
-        collider1.enabled = usandoImagem1;
-        collider2.enabled = !usandoImagem1;
+        collider.enabled = usandoImagem1;
+        collider.enabled = !usandoImagem1;
     }
 
-    // Detecta entrada do player
-    private void OnTriggerEnter2D(Collider2D other)
+    // Chamado pelo posto de controle quando ele for destruído
+    public void AtivarPerseguicao()
     {
-        if (other.CompareTag("Player"))
-        {
-            if (playerScript.protegido == 0)
-            {
-                perseguindo = true;
-            }
-        }
+        postoDestruido = 1;
+        perseguindo = true;
     }
 
-    // Enquanto estiver dentro da área
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (!playerScript.protegido)
         {
-            if (playerScript.protegido == 1)
-            {
-                perseguindo = false;
-            }
-            else
-            {
-                perseguindo = true;
-            }
-        }
-    }
+            Debug.Log("GAME OVER");
 
-    // Quando sair da área
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            perseguindo = false;
+            // Troque pelo nome da sua cena de Game Over
+            SceneManager.LoadScene("GameOver");
         }
     }
 }

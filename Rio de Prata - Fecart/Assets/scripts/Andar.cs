@@ -15,7 +15,7 @@ public class Andar : MonoBehaviour
     public bool isGrounded;
 
     [Range(-1f, 1f)] public float inputHorizontal;
-    [Range(-1f, 1f)] public float inputVertical;
+    [SerializeField] [Range(-1f, 1f)] public float inputVertical;
 
     void Awake()
     {
