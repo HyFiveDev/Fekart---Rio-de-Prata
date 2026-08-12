@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.Assertions.Must;
 
 public class AraraAnim : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class AraraAnim : MonoBehaviour
     private Quaternion rotacaoZero = Quaternion.Euler(0, 0, 0);
     private Quaternion novaRotacao;
     private Animator anim;
-    
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -30,12 +31,13 @@ public class AraraAnim : MonoBehaviour
     private void FixedUpdate()
     {
         if (andar.isGrounded) transform.rotation = rotacaoAtual;
-        if(!sprite.flipX) RotateSprite();
+        if (!sprite.flipX) RotateSprite();
         else if (sprite.flipX) RotateSpriteFlipped();
     }
 
     private void CheckWalking() => anim.SetBool("isWalking", andar.inputHorizontal != 0f);
     private void CheckFlying() => anim.SetBool("isGrounded", andar.isGrounded);
+
     private void FlipSprite()
     {
         if (andar.inputHorizontal < 0)
@@ -47,7 +49,7 @@ public class AraraAnim : MonoBehaviour
             sprite.flipX = false;
         }
     }
-    
+
     private void RotateSprite()
     {
         if (andar.inputVertical > 0)
@@ -84,5 +86,7 @@ public class AraraAnim : MonoBehaviour
             novaRotacao = Quaternion.Lerp(rotacaoAtual, rotacaoZero, 0.01f);
             transform.rotation = novaRotacao;
         }
+
+
     }
 }

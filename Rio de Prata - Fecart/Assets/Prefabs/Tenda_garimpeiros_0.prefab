@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: -1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: -8432170840831667060, guid: ac6406e1c86ea4e7ba6cf39627546478, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -277,7 +277,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0501ee32f459482fa257f7a3da7d19e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestruirPosto
-  jogadorPerto: 0
   barracaInteira: {fileID: 6017175826859640904}
   barracaDestruida: {fileID: 3552571054029411373}
   collider: {fileID: 4869984571190549536}

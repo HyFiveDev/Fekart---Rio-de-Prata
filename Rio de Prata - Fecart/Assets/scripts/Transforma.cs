@@ -7,7 +7,12 @@ public class Transforma : MonoBehaviour
     [SerializeField] private GameObject humano;
     [SerializeField] private GameObject arara;
     [SerializeField] private GameObject macaco;
-
+    
+    //imagens de transformação
+    [SerializeField] private GameObject imagemArara;
+    [SerializeField] private GameObject imagemMacaco;
+    [SerializeField] private GameObject imagemHumano;
+    
     [Header("Estado Atual")]
     // 1 = Humano
     // 2 = Arara
@@ -47,7 +52,11 @@ public class Transforma : MonoBehaviour
     private void VirarArara(InputAction.CallbackContext context)
     {
         if (transformacaoAtual == 2) return;
-
+        
+        imagemArara.SetActive(true);
+        imagemMacaco.SetActive(false);
+        imagemHumano.SetActive(false);
+        
         humano.SetActive(false);
         macaco.SetActive(false);
         arara.SetActive(true);
@@ -65,6 +74,10 @@ public class Transforma : MonoBehaviour
     {
         if (transformacaoAtual == 3) return;
 
+        imagemArara.SetActive(false);
+        imagemMacaco.SetActive(true);
+        imagemHumano.SetActive(false);
+        
         humano.SetActive(false);
         arara.SetActive(false);
         macaco.SetActive(true);
@@ -82,6 +95,10 @@ public class Transforma : MonoBehaviour
     {
         if (transformacaoAtual == 1) return;
 
+        imagemArara.SetActive(false);
+        imagemMacaco.SetActive(false);
+        imagemHumano.SetActive(true);
+        
         humano.SetActive(true);
         arara.SetActive(false);
         macaco.SetActive(false);
