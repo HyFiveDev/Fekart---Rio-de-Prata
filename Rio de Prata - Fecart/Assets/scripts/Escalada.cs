@@ -27,7 +27,7 @@ public class MonkeyClimb : MonoBehaviour
     [Tooltip("Selecione a Layer 'Escalavel' aqui")]
     public LayerMask climbableLayer;
     [Tooltip("Tamanho do círculo de detecção (verde na Scene)")]
-    public float detectionRadius = 0.4f;
+    public float detectionRadius = 1f;
 
     [Header("Input")]
     private InputSystem_Actions moveAction;
@@ -91,6 +91,8 @@ public class MonkeyClimb : MonoBehaviour
             rb.linearVelocity = new Vector2(inputHorizontal * moveSpeed, rb.linearVelocity.y);
         }
     }
+
+   
 
     private void OnDrawGizmosSelected()
     {

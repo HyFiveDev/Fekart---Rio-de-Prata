@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MacacoAnimScripts : MonoBehaviour
+public class PlayerAnimScripts : MonoBehaviour
 {
     private SpriteRenderer sprite;
     [SerializeField] private Andar andar;
@@ -19,11 +19,17 @@ public class MacacoAnimScripts : MonoBehaviour
     {
         FlipSprite();
         CheckWalking();
+        CheckGrounded();
     }
 
     private void CheckWalking()
     {
         anim.SetBool("isWalking", andar.inputHorizontal != 0f);
+    }
+    
+    private void CheckGrounded()
+    {
+        anim.SetBool("isGrounded", andar.isGrounded);
     }
 
     private void FlipSprite()

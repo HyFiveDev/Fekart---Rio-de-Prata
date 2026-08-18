@@ -1,22 +1,25 @@
 fileFormatVersion: 2
-guid: 565ade625047a4e9a9f83bf626ecdc81
+guid: 3bea3af5283984e669e845dd7ae2d602
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8217287502668739351
-    second: Arara walk cycle_0
+      213: -4671637627046692931
+    second: Monkey-runcycle V2_0
   - first:
-      213: 256998304657218722
-    second: Arara walk cycle_1
+      213: -5013555439072252952
+    second: Monkey-runcycle V2_1
   - first:
-      213: 4724431787120976165
-    second: Arara walk cycle_2
+      213: 98964435189480882
+    second: Monkey-runcycle V2_2
   - first:
-      213: -4097619883840874212
-    second: Arara walk cycle_3
+      213: 7488689121684517066
+    second: Monkey-runcycle V2_3
   - first:
-      213: -7142203868285679829
-    second: Arara walk cycle_4
+      213: -1855300674891115835
+    second: Monkey-runcycle V2_4
+  - first:
+      213: -7654676620725102764
+    second: Monkey-runcycle V2_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,7 +112,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
-    buildTarget: Android
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -125,111 +128,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Arara walk cycle_0
+      name: Monkey-runcycle V2_0
       rect:
         serializedVersion: 2
-        x: 3
-        y: 4
-        width: 19
-        height: 23
+        x: 0
+        y: 64
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9ec4c2aad8456fd80800000000000000
-      internalID: -8217287502668739351
+      spriteID: db7788064520b2fb0800000000000000
+      internalID: -4671637627046692931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arara walk cycle_1
+      name: Monkey-runcycle V2_1
       rect:
         serializedVersion: 2
-        x: 35
-        y: 4
-        width: 19
-        height: 23
+        x: 64
+        y: 64
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2ac98f0b89a019300800000000000000
-      internalID: 256998304657218722
+      spriteID: 8ebee5024e54c6ab0800000000000000
+      internalID: -5013555439072252952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arara walk cycle_2
+      name: Monkey-runcycle V2_2
       rect:
         serializedVersion: 2
-        x: 67
-        y: 4
-        width: 19
-        height: 23
+        x: 0
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 521e8e4edad809140800000000000000
-      internalID: 4724431787120976165
+      spriteID: 2bdbdd421a79f5100800000000000000
+      internalID: 98964435189480882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arara walk cycle_3
+      name: Monkey-runcycle V2_3
       rect:
         serializedVersion: 2
-        x: 99
-        y: 4
-        width: 19
-        height: 23
+        x: 64
+        y: 32
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c19561ffc645227c0800000000000000
-      internalID: -4097619883840874212
+      spriteID: ac07653541b2de760800000000000000
+      internalID: 7488689121684517066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Arara walk cycle_4
+      name: Monkey-runcycle V2_4
       rect:
         serializedVersion: 2
-        x: 131
-        y: 4
-        width: 19
-        height: 23
+        x: 0
+        y: 0
+        width: 64
+        height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b27496d3c6bc1ec90800000000000000
-      internalID: -7142203868285679829
+      spriteID: 5c29291bdd5a046e0800000000000000
+      internalID: -1855300674891115835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Monkey-runcycle V2_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 457513f6b2025c590800000000000000
+      internalID: -7654676620725102764
       vertices: []
       indices: 
       edges: []
@@ -238,7 +263,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2694945d01d6643b4ba1f20fde895108
     internalID: 0
     vertices: []
     indices: 
@@ -246,13 +271,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries: []
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":32.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
-      Arara walk cycle_0: -8217287502668739351
-      Arara walk cycle_1: 256998304657218722
-      Arara walk cycle_2: 4724431787120976165
-      Arara walk cycle_3: -4097619883840874212
-      Arara walk cycle_4: -7142203868285679829
+      Monkey-runcycle V2_0: -4671637627046692931
+      Monkey-runcycle V2_1: -5013555439072252952
+      Monkey-runcycle V2_2: 98964435189480882
+      Monkey-runcycle V2_3: 7488689121684517066
+      Monkey-runcycle V2_4: -1855300674891115835
+      Monkey-runcycle V2_5: -7654676620725102764
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
