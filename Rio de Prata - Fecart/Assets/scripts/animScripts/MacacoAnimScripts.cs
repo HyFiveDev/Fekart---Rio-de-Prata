@@ -1,11 +1,12 @@
+using JetBrains.Annotations;
 using UnityEngine;
 
-public class PlayerAnimScripts : MonoBehaviour
+public class MacacoAnimScripts : MonoBehaviour
 {
     private SpriteRenderer sprite;
     [SerializeField] private Andar andar;
-
     private Animator anim;
+    private bool once = false;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,6 +21,7 @@ public class PlayerAnimScripts : MonoBehaviour
         FlipSprite();
         CheckWalking();
         CheckGrounded();
+
     }
 
     private void CheckWalking()
@@ -42,5 +44,10 @@ public class PlayerAnimScripts : MonoBehaviour
         {
             sprite.flipX = false;
         }
+    }
+
+    public void CheckClimbing(bool isClimbing)
+    {
+            anim.SetBool("isClimbing", isClimbing);
     }
 }

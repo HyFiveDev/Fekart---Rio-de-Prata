@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class MacacoAnimScripts : MonoBehaviour
+public class PlayerAnimScripts : MonoBehaviour
 {
     private SpriteRenderer sprite;
     [SerializeField] private Andar andar;

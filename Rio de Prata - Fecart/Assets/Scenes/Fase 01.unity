@@ -121037,7 +121037,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   detectionRadius: 0.4
+  anim: {fileID: 1804440898}
   rb: {fileID: 1101087882}
+  isClimbing: 0
 --- !u!95 &1804440897
 Animator:
   serializedVersion: 7

@@ -32,12 +32,13 @@ public class MonkeyClimb : MonoBehaviour
     [Header("Input")]
     private InputSystem_Actions moveAction;
 
+    [SerializeField] private MacacoAnimScripts anim;
     [SerializeField] private Rigidbody2D rb;
     private Vector2 movement;
     private float inputVertical;
     private float inputHorizontal;
     private bool isTouchingClimbable;
-    private bool isClimbing;
+    public bool isClimbing;
     private float defaultGravity;
 
     void Awake()
@@ -61,6 +62,7 @@ public class MonkeyClimb : MonoBehaviour
 
     void Update()
     {
+        anim.CheckClimbing(isClimbing);
         movement = moveAction.Player.Move.ReadValue<Vector2>();
         inputHorizontal = movement.x;
         inputVertical = movement.y;
@@ -91,7 +93,7 @@ public class MonkeyClimb : MonoBehaviour
             rb.linearVelocity = new Vector2(inputHorizontal * moveSpeed, rb.linearVelocity.y);
         }
     }
-
+    
    
 
     private void OnDrawGizmosSelected()
