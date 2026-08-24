@@ -13,6 +13,8 @@ public class Transforma : MonoBehaviour
     [SerializeField] private GameObject imagemMacaco;
     [SerializeField] private GameObject imagemHumano;
     
+    [SerializeField] private FormaColisao Colisao;
+    
     [Header("Estado Atual")]
     // 1 = Humano
     // 2 = Arara
@@ -63,6 +65,8 @@ public class Transforma : MonoBehaviour
 
         transformacaoAtual = 2;
 
+        Colisao.FormaArara();
+
         Debug.Log("Transformação Atual = ARARA");
     }
 
@@ -84,6 +88,8 @@ public class Transforma : MonoBehaviour
 
         transformacaoAtual = 3;
 
+        Colisao.FormaMacaco();
+        
         Debug.Log("Transformação Atual = MACACO");
     }
 
@@ -105,6 +111,8 @@ public class Transforma : MonoBehaviour
 
         transformacaoAtual = 1;
 
+        Colisao.FormaHumano();
+        
         Debug.Log("Transformação Atual = HUMANO");
     }
 }
