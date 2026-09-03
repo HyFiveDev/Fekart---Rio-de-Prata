@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class InimigoComum : MonoBehaviour
 {
@@ -43,6 +44,14 @@ public class InimigoComum : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             perseguindo = false;
+        }
+    }
+    
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            SceneManager.LoadScene("GameOver");
         }
     }
 }
