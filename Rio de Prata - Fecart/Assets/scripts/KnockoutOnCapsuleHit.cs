@@ -7,15 +7,13 @@ public class KnockoutOnCapsuleHit : MonoBehaviour
 
     [Header("Componentes")]
     private Rigidbody2D rb;
-    private Animator animator;
+
+    [SerializeField] private EnemyAnimScripts anim;
 
     private void Awake()
     {
         if (rb == null)
             rb = GetComponent<Rigidbody2D>();
-
-        if (animator == null)
-            animator = GetComponent<Animator>();
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -45,10 +43,8 @@ public class KnockoutOnCapsuleHit : MonoBehaviour
         }
 
         // Ativa a animação de nocaute
-        if (animator != null)
-        {
-            animator.SetBool("Nocauteado", true);
-        }
+            anim.Atordoar(nocauteado);
+        
 
         // Desativa os scripts que controlam o personagem
         MonoBehaviour[] scripts = GetComponents<MonoBehaviour>();

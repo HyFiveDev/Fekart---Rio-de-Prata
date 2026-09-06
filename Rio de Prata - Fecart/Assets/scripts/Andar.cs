@@ -54,4 +54,9 @@ public class Andar : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Ground")) isGrounded = false;
     }
+    
+    public void VoltarParaCheckpoint()
+    {
+        transform.position = CheckpointManager.Instance.GetCheckpoint(transform.position);
+    }
 }

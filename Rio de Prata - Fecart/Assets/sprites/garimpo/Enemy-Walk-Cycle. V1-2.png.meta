@@ -1,52 +1,31 @@
 fileFormatVersion: 2
-guid: 147caa6e1e39b4aafa56e3631434e52e
+guid: f26560bb6e86841688817c83fbf200b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6335106673766682587
-    second: personagem nocauteado V2_0
+      213: -6923980059499347768
+    second: Enemy-Walk-Cycle. V1-2_0
   - first:
-      213: 7241820939687240873
-    second: personagem nocauteado V2_1
+      213: -425223612750511216
+    second: Enemy-Walk-Cycle. V1-2_1
   - first:
-      213: -4201778422912479449
-    second: personagem nocauteado V2_2
+      213: -4982184380446384039
+    second: Enemy-Walk-Cycle. V1-2_2
   - first:
-      213: -7462491054042217843
-    second: personagem nocauteado V2_3
+      213: -513148810898445975
+    second: Enemy-Walk-Cycle. V1-2_3
   - first:
-      213: 8806159973937935046
-    second: personagem nocauteado V2_4
+      213: -7425430427347662979
+    second: Enemy-Walk-Cycle. V1-2_4
   - first:
-      213: -7425765375591188343
-    second: personagem nocauteado V2_5
+      213: -4554332596676977013
+    second: Enemy-Walk-Cycle. V1-2_5
   - first:
-      213: -7792833659093667294
-    second: personagem nocauteado V2_6
+      213: -1204120076022940727
+    second: Enemy-Walk-Cycle. V1-2_6
   - first:
-      213: 7917903277431853357
-    second: personagem nocauteado V2_7
-  - first:
-      213: 6116127846418385803
-    second: personagem nocauteado V2_8
-  - first:
-      213: -5147478168638459675
-    second: personagem nocauteado V2_9
-  - first:
-      213: -4853249263601312501
-    second: personagem nocauteado V2_10
-  - first:
-      213: -3888228228755747963
-    second: personagem nocauteado V2_11
-  - first:
-      213: 5542695438542289116
-    second: personagem nocauteado V2_12
-  - first:
-      213: -874439729650765259
-    second: personagem nocauteado V2_13
-  - first:
-      213: -7952047810305276677
-    second: personagem nocauteado V2_14
+      213: 3319726567117191771
+    second: Enemy-Walk-Cycle. V1-2_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -155,155 +134,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: personagem nocauteado V2_0
+      name: Enemy-Walk-Cycle. V1-2_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
-        width: 64
-        height: 64
+        y: 63
+        width: 25
+        height: 49
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bdfc11874f1dae750800000000000000
-      internalID: 6335106673766682587
+      spriteID: 8c047a912d419ef90800000000000000
+      internalID: -6923980059499347768
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagem nocauteado V2_1
+      name: Enemy-Walk-Cycle. V1-2_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 63
+        width: 24
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 093c5eb806d491af0800000000000000
+      internalID: -425223612750511216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-Walk-Cycle. V1-2_2
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
-        width: 64
-        height: 64
+        y: 63
+        width: 22
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9a42b0d96cd108460800000000000000
-      internalID: 7241820939687240873
+      spriteID: 9506ef5e3b9bbdab0800000000000000
+      internalID: -4982184380446384039
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagem nocauteado V2_2
+      name: Enemy-Walk-Cycle. V1-2_3
       rect:
         serializedVersion: 2
-        x: 128
-        y: 128
-        width: 64
-        height: 64
+        x: 96
+        y: 63
+        width: 21
+        height: 50
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 72f866d49c840b5c0800000000000000
-      internalID: -4201778422912479449
+      spriteID: 969eb7110ede0e8f0800000000000000
+      internalID: -513148810898445975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: personagem nocauteado V2_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d828840ace7ef6890800000000000000
-      internalID: -7462491054042217843
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: personagem nocauteado V2_4
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6c275d9d6d3c53a70800000000000000
-      internalID: 8806159973937935046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: personagem nocauteado V2_5
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 988fd7afbb162f890800000000000000
-      internalID: -7425765375591188343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: personagem nocauteado V2_6
+      name: Enemy-Walk-Cycle. V1-2_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 26
+        height: 48
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 222b304431b4ad390800000000000000
-      internalID: -7792833659093667294
+      spriteID: d77c0913e5293f890800000000000000
+      internalID: -7425430427347662979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-Walk-Cycle. V1-2_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 24
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8e161a12a2cbc0c0800000000000000
+      internalID: -4554332596676977013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-Walk-Cycle. V1-2_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 22
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cb7cb9ab2b1a4fe0800000000000000
+      internalID: -1204120076022940727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Enemy-Walk-Cycle. V1-2_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 20
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5a727069b9021e20800000000000000
+      internalID: 3319726567117191771
       vertices: []
       indices: 
       edges: []
@@ -312,7 +313,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c0c1defb2e2ec45809714fb0969a673a
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -320,17 +321,16 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      personagem nocauteado V2_0: 6335106673766682587
-      personagem nocauteado V2_1: 7241820939687240873
-      personagem nocauteado V2_2: -4201778422912479449
-      personagem nocauteado V2_3: -7462491054042217843
-      personagem nocauteado V2_4: 8806159973937935046
-      personagem nocauteado V2_5: -7425765375591188343
-      personagem nocauteado V2_6: -7792833659093667294
+      Enemy-Walk-Cycle. V1-2_0: -6923980059499347768
+      Enemy-Walk-Cycle. V1-2_1: -425223612750511216
+      Enemy-Walk-Cycle. V1-2_2: -4982184380446384039
+      Enemy-Walk-Cycle. V1-2_3: -513148810898445975
+      Enemy-Walk-Cycle. V1-2_4: -7425430427347662979
+      Enemy-Walk-Cycle. V1-2_5: -4554332596676977013
+      Enemy-Walk-Cycle. V1-2_6: -1204120076022940727
+      Enemy-Walk-Cycle. V1-2_7: 3319726567117191771
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

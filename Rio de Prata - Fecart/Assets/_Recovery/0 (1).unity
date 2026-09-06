@@ -7120,7 +7120,7 @@ Tilemap:
       - {fileID: 735982903, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: -2089798189, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: -528857941, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 651, y: -25, z: 0}
@@ -7362,7 +7362,7 @@ Tilemap:
       - {fileID: 735982903, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: -2089798189, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: -528857941, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 673, y: -25, z: 0}
@@ -8099,7 +8099,7 @@ Tilemap:
       - {fileID: 1586656224429408312, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: 545560059, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
       - {fileID: -1910186530, guid: 24aa5fabae9ef4622850cf4c91bbe052, type: 3}
-      m_AnimationSpeed: 5
+      m_AnimationSpeed: 5.0000005
       m_AnimationTimeOffset: 0
       m_Flags: 0
   - first: {x: 662, y: -24, z: 0}
@@ -240777,11 +240777,11 @@ GameObject:
   - component: {fileID: 1854652648}
   - component: {fileID: 1854652647}
   - component: {fileID: 1854652651}
-  - component: {fileID: 1854652650}
   - component: {fileID: 1854652646}
   - component: {fileID: 1854652645}
   - component: {fileID: 1854652644}
   - component: {fileID: 1854652643}
+  - component: {fileID: 1854652650}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -241023,7 +241023,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::KnockoutOnCapsuleHit
   nocauteado: 0
-  anim: {fileID: 1854652651}
 --- !u!114 &1854652651
 MonoBehaviour:
   m_ObjectHideFlags: 0

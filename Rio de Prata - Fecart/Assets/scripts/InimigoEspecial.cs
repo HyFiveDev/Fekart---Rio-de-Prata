@@ -8,7 +8,8 @@ public class InimigoEspecial : MonoBehaviour
     [Header("Referências")]
     public Transform player;
     public PlayerEsconderijo playerScript;
-
+    
+    [SerializeField] GameObject telaMorte;
     [Header("Posto de Controle")]
     // 0 = não destruído
     // 1 = destruído
@@ -91,7 +92,8 @@ public class InimigoEspecial : MonoBehaviour
             Debug.Log("GAME OVER");
 
             // Troque pelo nome da sua cena de Game Over
-            SceneManager.LoadScene("GameOver");
+            telaMorte.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }

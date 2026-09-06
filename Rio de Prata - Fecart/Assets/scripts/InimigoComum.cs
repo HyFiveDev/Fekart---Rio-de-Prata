@@ -10,6 +10,15 @@ public class InimigoComum : MonoBehaviour
 
     private bool perseguindo = false;
 
+    [SerializeField] private GameObject telaMorte;
+
+    [SerializeField] private EnemyAnimScripts anim;
+    private SpriteRenderer sprite;
+
+    void Start()
+    {
+        sprite = GetComponent<SpriteRenderer>();
+    }
     void Update()
     {
         if (perseguindo)
@@ -20,12 +29,15 @@ public class InimigoComum : MonoBehaviour
                 transform.position.y,
                 transform.position.z
             );
-
+            anim.Flip(posicaoDestino.x, sprite);
             transform.position = Vector3.MoveTowards(
                 transform.position,
                 posicaoDestino,
                 velocidade * Time.deltaTime
             );
+            
+            anim.CheckWalking(posicaoDestino.x);
+            
         }
     }
 
@@ -51,7 +63,8 @@ public class InimigoComum : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            SceneManager.LoadScene("GameOver");
+            telaMorte.SetActive(true);
+            Time.timeScale = 0;
         }
     }
 }
