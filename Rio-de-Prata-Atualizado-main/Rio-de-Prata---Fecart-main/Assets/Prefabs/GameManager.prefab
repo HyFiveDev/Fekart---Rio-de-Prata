@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1217382376397365265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7668947669046049428}
+  - component: {fileID: 6217155537283106868}
+  - component: {fileID: 8641715997557835418}
+  - component: {fileID: 1486540779519964990}
+  - component: {fileID: 1786274804925075693}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7668947669046049428
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217382376397365265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 745.70715, y: -24.56557, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6217155537283106868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217382376397365265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e384e4a230dde4f64b3cf606f02f6c75, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointManager
+--- !u!114 &8641715997557835418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217382376397365265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7dd352f3b35c408794bf153f47281e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TutorialManager
+  tutorialPanel: {fileID: 0}
+  tutorialText: {fileID: 0}
+  mensagens:
+  - 
+  - "A transforma\xE7\xE3o \xE9 ativada pelas teclas:\n\"X\", \"C\" e \"V\". Experimente
+    us\xE1-las!"
+  - 
+  - "O macaco consegue escalar \xE1rvores especiais."
+  - 
+  - "Cuidado! N\xE3o diexe que eles te vejam!"
+  - 
+  - "Aviso: A \xE1gua da regi\xE3o foi contaminada por man\xE9sio por conta dos garimpeiros.
+    Eu n\xE3o tocaria nela se pudesse"
+  - 
+  - "Onde est\xE3o as \xE1rvores?"
+  passoAtual: -1
+--- !u!114 &1486540779519964990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217382376397365265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbf836c1c7b854e9ab245d0a4e2ee88e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ContagemDeBarracas
+  barracasDestruidas: 0
+  spriteBarracaInteira:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  spriteBarracaDestuida:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &1786274804925075693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1217382376397365265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b3056542c474d0419e30f2a14a0b315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TrocadeCena
+  telaMorte: {fileID: 0}
+  player: {fileID: 0}
+  contagem: {fileID: 1486540779519964990}
